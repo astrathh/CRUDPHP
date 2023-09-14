@@ -36,12 +36,6 @@ class ProdutoDAO
         $r = pg_affected_rows($resultado);
         pgclose($conexao);
 
-        if ($resultado) {
-            echo "Produto cadastrado com sucesso!";
-            return $r;
-        } else {
-            echo "Erro ao cadastrar produto!";
-        }
     }
 
     public function remover(Produto $produto)
