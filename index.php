@@ -6,9 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div> 
-        <h1> Hello World </h1>
-        <p> This is a paragraph </p>
-    </div>
+    <h1>Formulário do CRUD </h1>
+        <form action="Controller\Controlador.php" method="get">
+            Código: <input type="text" name="txtCodigo" /> <br />
+            Descrição: <input type="text" name="txtDescricao" /> <br />
+            Preço: <input type="text" name="txtPreco" /> <br /><br />
+            <input type="submit" name="b1" value="Gravar" />
+            <input type="submit" name="b1" value="Alterar" />
+            <input type="submit" name="b1" value="Remover" />
+            <input type="submit" name="b1" value="Listar" />
+        </form>
 </body>
 </html>

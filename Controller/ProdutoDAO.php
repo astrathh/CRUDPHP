@@ -1,6 +1,6 @@
 <?php
-include("../Model/Produto.php");
-include("../Model/Banco.php");
+include_once("../Model/Produto.php");
+include_once("../Model/Banco.php");
 
 class ProdutoDAO
 {
@@ -38,7 +38,7 @@ class ProdutoDAO
 
     }
 
-    public function remover(Produto $produto)
+    public function remover($produto)
     {
         $banco = new Banco();
         $conexao = $banco->conexao;

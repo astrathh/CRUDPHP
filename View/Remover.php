@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Remover</title>
 </head>
 <body>
     <?php
-    include("../Controller/ProdutoDAO.php");
+    include("../Controller/ProdutoDAO.php")
+    //include("../Model/Produto.php")
     $prodDAO = new ProdutoDAO();
     $prod = new Produto();
+    
+    $prod->setCodigo($_GET["txtCodigo"]);
 
-    $prod->setDescricao($_GET["txtDescricao"]);
-    $prod->setPreco($_GET["txtPreco"]);
-    $r = $prodDAO->gravar($prodDAO);
+    $r = $prodDAO->remover($prod);
     ?>
 </body>
 </html>

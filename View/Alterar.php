@@ -7,18 +7,19 @@
 </head>
 <body>
     <?php
+    //Vamos usar barra simples para definir o diretório.
     include("../Controller/ProdutoDAO.php")
 
     //cria ou captura a sessao
     session_start();
-    //$_SESSION['codigo'] -> pega o campo da sessao
-    if (isset($_SESSION['codigo']){
-        $dao = new ProdutoDAO();
-        $obj = new Produto();
-        $obj->setCodigo($_SESSION['codigo']);
-        $obj->setDescricao($_SESSION['descricao']);
-        $obj->setPreco($_SESSION['preco']);
-        $r = $dao->alterar($obj);
+    //$_SESSION['txtCodigo'] -> pega o campo HTML da sessão
+    if (isset($_SESSION['txtCodigo']){
+        $prodDAO = new ProdutoDAO();
+        $prod = new Produto();
+        $prod->setCodigo($_SESSION['txtCodigo']);
+        $prod->setDescricao($_SESSION['txtDescricao']);
+        $prod->setPreco($_SESSION['txtPreco']);
+        $r = $prodDAO->alterar($prod);
     })
     ?>
 </body>

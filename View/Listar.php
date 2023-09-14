@@ -8,9 +8,9 @@
 <body>
     <?php
     include("../Controller/ProdutoDAO.php")
-    $dao = new ProdutoDAO();
+    $prodDAO = new ProdutoDAO();
 
-    $tabela = $dao->listar();
+    $tabela = $prodDAO->listar();
 
     if ($tabela) {
         echo "<h1> Lista de produtos </h1><br/>";

@@ -3,43 +3,21 @@ $botao = strtolower(trim($_GET["b1"]));
 
 switch ($botao) {
     case "cadastrar":
-        include("../Model/Produto.php");
-        include("../Model/Banco.php");
-        include("../Model/ProdutoDAO.php");
-
-        $produto = new Produto();
-        $produto->setDescricao($_POST["descricao"]);
-        $produto->setPreco($_POST["preco"]);
-
-        $produtoDAO = new ProdutoDAO();
-        $produtoDAO->gravar($produto);
+        header("Location: ..\\View/Cadastrar.php?txtCodigo=" . $_GET["txtCodigo"] . "&txtDescricao=" . $_GET["txtDescricao"] . "&txtPreco=" . $_GET["txtPreco"]);
         break;
     case "listar":
-        include("../Model/Produto.php");
-        include("../Model/Banco.php");
-        include("../Model/ProdutoDAO.php");
-
-        $produtoDAO = new ProdutoDAO();
-        $produtoDAO->listar();
+        header("Location: ..\\View/Listar.php");
         break;
     case "remover":
-        include("../Model/Produto.php");
-        include("../Model/Banco.php");
-        include("../Model/ProdutoDAO.php");
-
-        $produto = new Produto();
-        $produto->setCodigo($_POST["codigo"]);
-
-        $produtoDAO = new ProdutoDAO();
-        $produtoDAO->remover($produto);
+        header("Location: ..\\View/Remover.php?txtCodigo=" . $_GET["txtCodigo"]);
         break;
     case "alterar":
         //passa campos via sessão
         session_start();//inicia a sessão e viabiliza $_SESSION
-        $_SESSION["codigo"] = $_POST["codigo"];
-        $_SESSION["descricao"] = $_POST["descricao"];
-        $_SESSION["preco"] = $_POST["preco"];
-        header("Location: ..\\View\Alterar.php");
+        $_SESSION["txtCodigo"] = $_POST["txtCodigo"];
+        $_SESSION["txtDescricao"] = $_POST["txtDescricao"];
+        $_SESSION["txtPreco"] = $_POST["txtPreco"];
+        header("Location: ../View/Alterar.php");
         break;
     default:
         echo "Botão não encontrado!";
