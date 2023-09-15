@@ -1,3 +1,7 @@
+<?php 
+include_once("../Controller/ProdutoDAO.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
 </head>
 <body>
     <?php
-    include("../Controller/ProdutoDAO.php")
+
     $prodDAO = new ProdutoDAO();
 
     $tabela = $prodDAO->listar();
@@ -15,7 +19,8 @@
     if ($tabela) {
         echo "<h1> Lista de produtos </h1><br/>";
         while ($linha = pg_fetch_array($tabela)) {
-            echo "Codigo: $linha[0] Descricao: $linha[1] Preco: $linha[2] <br/>"
+            echo "Codigo: $linha[0] Descricao: $linha[1] Preco: $linha[2] <br/>";
+            linha == false;
         }
     } else
         echo "Tabela vazia";

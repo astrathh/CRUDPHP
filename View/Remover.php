@@ -1,3 +1,6 @@
+<?php 
+include_once("../Controller/ProdutoDAO.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +10,6 @@
 </head>
 <body>
     <?php
-    include("../Controller/ProdutoDAO.php")
-    //include("../Model/Produto.php")
     $prodDAO = new ProdutoDAO();
     $prod = new Produto();
     
