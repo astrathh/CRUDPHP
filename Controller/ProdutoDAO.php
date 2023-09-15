@@ -34,7 +34,7 @@ class ProdutoDAO
         $resultado = pg_query($conexao, $sql);
 
         $r = pg_affected_rows($resultado);
-        pgclose($conexao);
+        //pgclose($conexao);
 
     }
 
@@ -48,7 +48,7 @@ class ProdutoDAO
         $resultado = pg_query($conexao, $sql);
 
         $r = pg_affected_rows($resultado);
-        pgclose($conexao);
+        //pgclose($conexao);
 
         if ($resultado) {
             echo "Produto removido com sucesso!";
