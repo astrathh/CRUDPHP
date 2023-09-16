@@ -11,7 +11,7 @@
             Código: <input type="text" name="txtCodigo" /> <br />
             Descrição: <input type="text" name="txtDescricao" /> <br />
             Preço: <input type="text" name="txtPreco" /> <br /><br />
-            <input type="submit" name="b1" value="Cadastrar" />
+            <input type="submit" name="b1" value="Gravar" />
             <input type="submit" name="b1" value="Alterar" />
             <input type="submit" name="b1" value="Remover" />
             <input type="submit" name="b1" value="Listar" />

@@ -2,8 +2,9 @@
 $botao = strtolower(trim($_GET["b1"]));
 
 switch ($botao) {
-    case "cadastrar":
-        header("Location: ..\\View/Cadastrar.php?txtCodigo=" . $_GET["txtCodigo"] . "&txtDescricao=" . $_GET["txtDescricao"] . "&txtPreco=" . $_GET["txtPreco"]);
+    case "gravar":
+        //Header é uma função para enviar um cabeçalho HTTP(Para o cliente penso eu).
+        header("Location: ..\\View/Gravar.php?txtCodigo=" . $_GET["txtCodigo"] . "&txtDescricao=" . $_GET["txtDescricao"] . "&txtPreco=" . $_GET["txtPreco"]);
         break;
     case "listar":
         header("Location: ..\\View/Listar.php");
