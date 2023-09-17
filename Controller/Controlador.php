@@ -1,5 +1,6 @@
 <?php
 $botao = strtolower(trim($_GET["b1"]));
+// Key -> atributo name , Value -> atributo value
 
 switch ($botao) {
     case "gravar":
@@ -15,9 +16,9 @@ switch ($botao) {
     case "alterar":
         //passa campos via sessão
         session_start();//inicia a sessão e viabiliza $_SESSION
-        $_SESSION["txtCodigo"] = $_POST["txtCodigo"];
-        $_SESSION["txtDescricao"] = $_POST["txtDescricao"];
-        $_SESSION["txtPreco"] = $_POST["txtPreco"];
+        $_SESSION["txtCodigo"] = $_GET["txtCodigo"];
+        $_SESSION["txtDescricao"] = $_GET["txtDescricao"];
+        $_SESSION["txtPreco"] = $_GET["txtPreco"];
         header("Location: ../View/Alterar.php");
         break;
     default:

@@ -31,10 +31,11 @@ class ProdutoDAO
 
         $sql = "SELECT * FROM produto ORDER BY 2 DESC";
 
-        $resultado = pg_query($conexao, $sql);
+        $consulta = pg_query($conexao, $sql);
 
-        $r = pg_affected_rows($resultado);
+        //$r = pg_affected_rows($resultado);
         pg_close($conexao);
+        return $consulta;
 
     }
 

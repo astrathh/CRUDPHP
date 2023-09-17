@@ -1,4 +1,6 @@
 <?php 
+// Include -> Caso de erro, o programa continua
+// Require -> Caso de erro, o programa para
 include_once("../Controller/ProdutoDAO.php");
 ?>
 
@@ -20,7 +22,7 @@ include_once("../Controller/ProdutoDAO.php");
         echo "<h1> Lista de produtos </h1><br/>";
         while ($linha = pg_fetch_array($tabela)) {
             echo "Codigo: $linha[0] Descricao: $linha[1] Preco: $linha[2] <br/>";
-            linha == false;
+            //linha == false;
         }
     } else
         echo "Tabela vazia";
