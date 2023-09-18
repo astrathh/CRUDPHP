@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulário do CRUD </h1>
-        <form action="Controller\Controlador.php" method="get">
+        <form action="Controller\Controlador.php" method="post">
             Código: <input type="text" name="txtCodigo" /> <br />
             Descrição: <input type="text" name="txtDescricao" /> <br />
             Preço: <input type="text" name="txtPreco" /> <br /><br />
