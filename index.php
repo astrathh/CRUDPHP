@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Formulário do CRUD </h1>
+        <!-- 
+            O Atributo action.php é o script que o botão irá executar
+            O Atributo method é o método que o formulário irá utilizar para enviar os dados
+            O PHP armazena os valores do formulário em um array associativo chamado $_POST ou $_GET
+            Esses valores vão ficar visíveis somente no script que recebeu os dados.
+        -->
         <form action="Controller\Controlador.php" method="post">
             Código: <input type="text" name="txtCodigo" /> <br />
             Descrição: <input type="text" name="txtDescricao" /> <br />
