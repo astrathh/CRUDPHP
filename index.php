@@ -1,3 +1,6 @@
+<?php
+    include_once(".\Model\Produto.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,5 +25,17 @@
             <input type="submit" name="b1" value="Remover" />
             <input type="submit" name="b1" value="Listar" />
         </form>
+    <h1>Carrinho de Compras</h2>
+    <?php
+        session_start();
+        $total = 0;
+        foreach ($_SESSION["carrinho"] as $produto) {
+            echo "<div> Codigo: " . $produto->getCodigo() . " Descrição: " . $produto->getDescricao() . " Preço: " . $produto->getPreco() . "</div>";
+            $total += $produto->getPreco();
+
+        }
+        echo "Total: ". $total. " REAIS no total, parceiro";
+    ?>
+
 </body>
 </html>
