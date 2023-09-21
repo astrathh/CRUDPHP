@@ -1,0 +1,107 @@
+<mxfile host="Electron" modified="2023-09-18T17:24:23.149Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="djag4T0vH8ve7ydDq7UK" version="21.7.5" type="device">
+  <diagram name="Page-1" id="9EP87zYEXodM4L0DwxKL">
+    <mxGraphModel dx="3608" dy="2208" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-8" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-2" target="lSkkbiKSr8tIyJVPMw1h-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-484" y="137" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="427" y="183" />
+              <mxPoint x="-444" y="183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-9" value="Acessa os campos via variável super global $_POST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-8">
+          <mxGeometry x="-0.0086" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-13" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-2" target="lSkkbiKSr8tIyJVPMw1h-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="-283" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="-258" />
+              <mxPoint x="1578" y="-258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-14" value="Chama os scripts da camada View via requesição HTTP de mudança de página -&amp;gt; Via método header(&quot;Location: &lt;i&gt;localização do script&lt;/i&gt;&quot;)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-13">
+          <mxGeometry x="0.0496" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-24" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-2" target="lSkkbiKSr8tIyJVPMw1h-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="-125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-25" value="Abre uma sessão e envia os campos via varíavel super global $_SESSION" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-24">
+          <mxGeometry x="-0.0342" y="-5" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-2" value="Controlador" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="364" y="-30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-5" value="Index" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-556" y="-51" width="226" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-4" value="Formulário" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-5">
+          <mxGeometry x="19" y="38" width="181" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;dashPattern=12 12;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-4" target="lSkkbiKSr8tIyJVPMw1h-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-7" value="Acessa o Controlador Via Forms (actions=Controller\Controlador.php)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-6">
+          <mxGeometry x="-0.0957" y="3" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-28" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;dashPattern=12 12;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-10" target="lSkkbiKSr8tIyJVPMw1h-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-29" value="Chama os métodos instância a classe, jeito normal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-28">
+          <mxGeometry x="-0.393" y="-1" relative="1" as="geometry">
+            <mxPoint x="74" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-10" value="View" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1478" y="-200" width="200" height="405" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-12" value="Alterar" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-10">
+          <mxGeometry x="38.5" y="49" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-16" value="Gravar" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-10">
+          <mxGeometry x="38.5" y="133" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-17" value="Listar" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-10">
+          <mxGeometry x="41.5" y="213" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-18" value="Resolver" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-10">
+          <mxGeometry x="38.5" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-16" target="lSkkbiKSr8tIyJVPMw1h-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="lSkkbiKSr8tIyJVPMw1h-18" target="lSkkbiKSr8tIyJVPMw1h-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-21" value="Envia os campos via variável super global $_GET através da Query String da URL (Adicionado pelo método header)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="lSkkbiKSr8tIyJVPMw1h-20">
+          <mxGeometry x="0.3477" y="6" relative="1" as="geometry">
+            <mxPoint x="112" y="-46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-26" value="Model" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2114" y="-210" width="200" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lSkkbiKSr8tIyJVPMw1h-27" value="ProdutoDAO" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="lSkkbiKSr8tIyJVPMw1h-26">
+          <mxGeometry x="32" y="176" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

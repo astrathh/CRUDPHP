@@ -14,7 +14,7 @@ class ProdutoDAO
         $resultado = pg_query($conexao, $sql);
 
         $r = pg_affected_rows($resultado);
-        pgclose($conexao);
+        pg_close($conexao);
 
         if ($resultado) {
             echo "Produto cadastrado com sucesso!";
@@ -31,10 +31,11 @@ class ProdutoDAO
 
         $sql = "SELECT * FROM produto ORDER BY 2 DESC";
 
-        $resultado = pg_query($conexao, $sql);
+        $consulta = pg_query($conexao, $sql);
 
-        $r = pg_affected_rows($resultado);
-        //pgclose($conexao);
+        //$r = pg_affected_rows($resultado);
+        pg_close($conexao);
+        return $consulta;
 
     }
 
@@ -48,7 +49,7 @@ class ProdutoDAO
         $resultado = pg_query($conexao, $sql);
 
         $r = pg_affected_rows($resultado);
-        //pgclose($conexao);
+        pg_close($conexao);
 
         if ($resultado) {
             echo "Produto removido com sucesso!";
@@ -68,7 +69,7 @@ class ProdutoDAO
         $resultado = pg_query($conexao, $sql);
 
         $r = pg_affected_rows($resultado);
-        pgclose($conexao);
+        pg_close($conexao);
 
         if ($resultado) {
             echo "Produto alterado com sucesso!";

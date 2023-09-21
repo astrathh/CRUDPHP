@@ -1,3 +1,4 @@
+<!-- Acho que essa página é uma requesição HTTP -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 
     $prod->setDescricao($_GET["txtDescricao"]);
     $prod->setPreco($_GET["txtPreco"]);
-    $r = $prodDAO->gravar($prodDAO);
+    $r = $prodDAO->gravar($prod);
     ?>
 </body>
 </html>
